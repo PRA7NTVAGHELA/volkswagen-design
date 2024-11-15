@@ -1,0 +1,142 @@
+/* Global Styles - General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Setup */
+body {
+  font-family: 'Poppins', sans-serif; /* Elegant modern font */
+  background: #f4f6f9; /* Light, neutral background for a clean design */
+  color: #333; /* Darker text color for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+/* Center the content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headings and Titles */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #007ACC;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #007ACC;
+  margin: 10px 0;
+}
+
+/* Buttons with Hover Effects */
+button {
+  background: linear-gradient(45deg, #00b4d8, #007acc);
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(0, 183, 216, 0.3);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Input Fields with Custom Styling */
+input[type="text"], select {
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #00b4d8;
+}
+
+/* Card Components */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.card-content {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Flexbox Layouts for Responsive Design */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.flex-item {
+  width: 48%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.flex-item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .flex-item {
+    width: 100%;
+  }
+}
